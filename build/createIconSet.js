@@ -36,7 +36,7 @@ export default function (glyphMap, fontName, expoAssetId, fontStyle) {
                     console.warn(`"${this.props.name}" is not a valid icon name for family "${fontName}"`);
                 }
                 if (!this.state.fontIsLoaded) {
-                    return <Text />;
+                    return <Text></Text>;
                 }
                 return (<RNVIconComponent ref={(view) => {
                     this._icon = view;

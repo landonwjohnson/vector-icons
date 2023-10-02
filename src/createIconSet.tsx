@@ -151,7 +151,7 @@ export default function <G extends string, FN extends string>(
       }
 
       if (!this.state.fontIsLoaded) {
-        return <Text />;
+        return <Text></Text>;
       }
 
       return (
